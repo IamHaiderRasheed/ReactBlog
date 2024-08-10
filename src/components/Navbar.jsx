@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HiSearch, HiMenu, HiX } from 'react-icons/hi'; // Import necessary icons
+import { Link } from 'react-router-dom'; 
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -7,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center my-4 pt-6">
-        <nav className="bg-white rounded-full shadow-md border border-black" style={{ width: '978px', height: '55px' }}>
+        <nav className="bg-white rounded-full shadow-md border border-black py-6" style={{ width: '1100px'}}>
           <div className="flex justify-between items-center h-full px-8">
             {/* Left: Hamburger Menu (Visible on mobile) */}
             <div className="lg:hidden flex items-center">
@@ -23,6 +24,7 @@ const Navbar = () => {
             <div className="flex items-center justify-center flex-grow lg:flex-grow-0">
               <div className="flex-shrink-0">
                 <a href="/" className="text-2xl font-bold text-gray-800">Brand</a>
+                
               </div>
             </div>
 
